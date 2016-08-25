@@ -1,0 +1,20 @@
+{
+    "name": "cemerson/clock",
+    "description": "Ultra-simple clock abstraction for PHP 7, allowing developers to properly mock time-related functions",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Emerson",
+            "email": "chris@cemerson.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CEmerson\\Clock\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin"
+    }
+}
