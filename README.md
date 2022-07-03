@@ -1,6 +1,24 @@
 Clock
 =====
 
+DEPRECATED - DO NOT USE!!!
+--------------------------
+
+Since this package was created, PSR-20 has been proposed which serves the same purpose as this package. It is highly
+recommended that you use PSR-20 instead of this package, as it is likely to receive a lot more community support and
+compatibility in the future.
+
+v2.0 of cemerson/clock will include an adapter to help switch to a PSR-20 compatible clock interface, as well as having
+the provided `WallClock` implementation implement the newer interface too. You should switch out your dependent code to
+using `ClockInterface` instead. I am currently using one provided by the package `stella-maris/clock` until PSR-20 is
+finalised, at which point I may make a further version of this package to provide compatibility with the PSR provided
+interface too.
+
+There will be no further work done on this package otherwise!
+
+Original ReadMe
+---------------
+
 You can use this library to help unit test applications that have a reliance on the clock in some way.
 
 Rationale
