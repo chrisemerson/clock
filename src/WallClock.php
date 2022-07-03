@@ -5,8 +5,9 @@ namespace CEmerson\Clock;
 use DateTimeImmutable;
 use DateTimeInterface;
 use DateTimeZone;
+use StellaMaris\Clock\ClockInterface;
 
-class WallClock implements Clock
+class WallClock implements Clock, ClockInterface
 {
     /** @var DateTimeZone */
     private $timeZone;
@@ -17,6 +18,11 @@ class WallClock implements Clock
     }
 
     public function getDateTime(): DateTimeInterface
+    {
+        return $this->now();
+    }
+
+    public function now(): DateTimeImmutable
     {
         return new DateTimeImmutable('now', $this->timeZone);
     }
