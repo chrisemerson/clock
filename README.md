@@ -1,20 +1,20 @@
 Clock
 =====
 
-DEPRECATED - DO NOT USE!!!
---------------------------
+!DEPRECATED - DO NOT USE!
+-------------------------
 
-Since this package was created, PSR-20 has been proposed which serves the same purpose as this package. It is highly
-recommended that you use PSR-20 instead of this package, as it is likely to receive a lot more community support and
-compatibility in the future.
+Since this package was created, [PSR-20](https://www.php-fig.org/psr/psr-20/) has been proposed and accepted, and serves
+the same purpose as this package. It is highly recommended that you use PSR-20 instead of this package, as it is likely
+to receive a lot more community support and compatibility in the future.
 
-v2.0 of cemerson/clock will include an adapter to help switch to a PSR-20 compatible clock interface, as well as having
-the provided `WallClock` implementation implement the newer interface too. You should switch out your dependent code to
-using `ClockInterface` instead. I am currently using one provided by the package `stella-maris/clock` until PSR-20 is
-finalised, at which point I may make a further version of this package to provide compatibility with the PSR provided
-interface too.
+v2.0 and v3.0 of cemerson/clock includes an adapter to help switch to a PSR-20 compatible clock interface, as well as
+having the provided `WallClock` implementation implement the newer interface too. You should switch out your dependent
+code to using `ClockInterface` instead. v2.0 implemented the interface from `stella-maris/clock` which provided a
+PSR-20-like interface while PSR-20 was under development. v3.0 removes this dependency and implements the PSR-20
+interface directly now that it has been finalised and accepted.
 
-There will be no further work done on this package otherwise!
+**TLDR; There will be no further work done on this package! Migrate your code to use `psr/clock`**
 
 Original ReadMe
 ---------------
