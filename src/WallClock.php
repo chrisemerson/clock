@@ -5,7 +5,7 @@ namespace CEmerson\Clock;
 use DateTimeImmutable;
 use DateTimeInterface;
 use DateTimeZone;
-use StellaMaris\Clock\ClockInterface;
+use Psr\Clock\ClockInterface;
 
 class WallClock implements Clock, ClockInterface
 {

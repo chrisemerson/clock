@@ -3,7 +3,7 @@
 namespace CEmerson\Clock;
 
 use DateTimeInterface;
-use StellaMaris\Clock\ClockInterface;
+use Psr\Clock\ClockInterface;
 
 class Psr20ClockAdapter implements Clock
 {

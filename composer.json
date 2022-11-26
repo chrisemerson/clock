@@ -8,9 +8,10 @@
             "email": "chris@cemerson.co.uk"
         }
     ],
+    "abandoned": "psr/clock",
     "require": {
         "php": "^7.4 | ^8.0",
-        "stella-maris/clock": "^0.1.4"
+        "psr/clock": "^1.0"
     },
     "autoload": {
         "psr-4": {
